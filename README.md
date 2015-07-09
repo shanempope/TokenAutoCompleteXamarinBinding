@@ -127,3 +127,35 @@ public class PersonTokenView : TokenAutoComplete.TokenCompleteTextView
         }
     }
 ```
+
+
+Resources/layout/token.axml: 
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <TextView
+        android:id="@+id/tokenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/token_background"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>
+```
+
+Resources/drawable/token_background.xml
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/app_background_color" />
+    <corners
+        android:topLeftRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomRightRadius="5dp" />
+</shape>
+```
