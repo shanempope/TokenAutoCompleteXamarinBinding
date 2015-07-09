@@ -1,0 +1,22 @@
+﻿<metadata>
+    <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.tokenautocomplete']" name="managedName">TokenAutoComplete</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView.TokenImageSpan']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/interface[@name='TokenCompleteTextView.TokenListener']/method[@name='onTokenAdded' and count(parameter)=1 and parameter[1][@type='T']]/parameter[@name='p0']" name="name">token</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/interface[@name='TokenCompleteTextView.TokenListener']/method[@name='onTokenRemoved' and count(parameter)=1 and parameter[1][@type='T']]/parameter[@name='p0']" name="name">token</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='getViewForObject' and count(parameter)=1 and parameter[1][@type='T']]/parameter[@name='p0']" name="name">obj</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='defaultObject' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[@name='p0']" name="name">completionText</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='addObject' and count(parameter)=1 and parameter[1][@type='T']]/parameter[@name='p0']" name="name">token</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='addObject' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.CharSequence']]/parameter[@name='p0']" name="name">token</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='addObject' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.CharSequence']]/parameter[@name='p1']" name="name">sourceText</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='removeObject' and count(parameter)=1 and parameter[1][@type='T']]/parameter[@name='p0']" name="name">token</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='setDeletionStyle' and count(parameter)=1 and parameter[1][@type='com.tokenautocomplete.TokenCompleteTextView.TokenDeleteStyle']]/parameter[@name='p0']" name="name">tokenDeleteStyle</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='setPrefix' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[@name='p0']" name="name">prefix</attr>
+  <attr path="/api/package[@name='com.tokenautocomplete']/class[@name='TokenCompleteTextView']/method[@name='setTokenClickStyle' and count(parameter)=1 and parameter[1][@type='com.tokenautocomplete.TokenCompleteTextView.TokenClickStyle']]/parameter[@name='p0']" name="name">tokenClickStyle</attr>
+</metadata>
